@@ -1,0 +1,11 @@
+<form role="form" [formGroup]="addCategoryForm" (ngSubmit)="addCategory(addCategoryForm.value)">
+  <div class="alert alert-danger" style="display: none;">
+  </div>
+  <div class="form-group">
+    <label for="ime">Name:</label>
+    <input id="ime" type="text" class="form-control" formControlName='ime'>
+  </div>
+
+  <button type="submit" class="btn btn-default">Add category</button>
+</form>
+
